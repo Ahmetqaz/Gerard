@@ -22,19 +22,24 @@
   .autoContainer {
     padding: 0 15px;
   }
+  @include index-768;
+
 }
 @media (max-width: 580px) {
   ._hideMob {
     display: none;
   }
   @include index-580;
+  @include components-580;
+
 }
 @media (max-width: 460px) {
   @include index-460;
   @include componets-460;
+  @include components-460;
 
 }
 
 @media (max-height:750px){
-  @include index-700;
+  @include index-750;
 }

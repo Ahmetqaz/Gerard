@@ -26,5 +26,83 @@
     cursor: default;
     opacity: 0.5 !important;
   }
+  &--ico {
+    span {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      @include transition;
+      position: relative;
+      border-radius: 50%;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: $white;
+        border-radius: inherit;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+        z-index: -1;
+      }
+      svg {
+        fill: $white;
+        width: 100%;
+        max-width: 43px;
+        @include transition;
+      }
+      &:hover {
+        &:after {
+          width: 115%;
+          height: 115%;
+          opacity: 1;
+        }
+        svg {
+          fill: $black;
+        }
+      }
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
 }
 
+@mixin components-580 {
+  .button {
+    &--ico {
+      span {
+        width: 55px;
+        height: 55px;
+      }
+      svg {
+        max-width: 38px;
+      }
+    }
+  }
+}
+@mixin components-460{
+  .button {
+    &--ico {
+      span {
+        width: 100%;
+        position: relative;
+        padding-bottom: 100%;
+        height: auto;
+        svg {
+          width: 80%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
