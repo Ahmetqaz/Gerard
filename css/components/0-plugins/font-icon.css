@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "font-icon";
+  src: url("../fonts/font-icon.ttf") format("truetype"), url("../fonts/font-icon.eot") format("embedded-opentype"), url("../fonts/font-icon.woff") format("woff");
+}
+.ico {
+  font-family: "font-icon" !important;
+  font-size: 18px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Clippathgroup:before {
+  content: "";
+}
+
+.Spotify:before {
+  content: "";
+}
+
+.Apple_music:before {
+  content: "";
+}
+
+.Deezer:before {
+  content: "";
+}
+
+.Tidal:before {
+  content: "";
+}
+
+.amozon:before {
+  content: "";
+}
+
+.play:before {
+  content: "";
+}

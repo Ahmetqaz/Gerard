@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'fonticon';
+  src: url("../font-icon/fonts/fonticon.ttf") format("truetype"),
+  url("../font-icon/fonts/fonticon.eot") format("embedded-opentype"),
+  url("../font-icon/fonts/fonticon.woff") format("woff");
+  }
+  .ico {
+      font-family: 'fonticon' !important;
+      font-size: 18px;
+      font-style:normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .Spotify:before { content: "\ea01"; }
+  .Apple_music:before { content: "\ea02"; }
+  .Deezer:before { content: "\ea03"; }
+  .Tidal:before { content: "\ea04"; }
+  .amozon:before { content: "\ea05"; }
+  .play:before { content: "\ea06"; }
+  .g:before { content: "\ea07"; }
+  .e:before { content: "\ea08"; }
+  .r:before { content: "\ea09"; }
+  .a:before { content: "\ea0a"; }
+  .d:before { content: "\ea0b"; }
+  
