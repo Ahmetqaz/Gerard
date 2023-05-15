@@ -3,6 +3,21 @@
   flex-direction: column;
   overflow: hidden;
   min-height: 100%;
+  position: relative;
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .2;
+    }
+  }
 }
 .autoContainer {
   width: 100%;
@@ -87,7 +102,7 @@
     }
   }
 }
-@mixin components-460{
+@mixin components-460 {
   .button {
     &--ico {
       span {

@@ -1,6 +1,7 @@
 .hero {
   margin: auto;
   padding: 40px 0;
+  position: relative;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -29,6 +30,13 @@
         height: auto;
         fill: $white;
       }
+      &-wrapper {
+        margin-left: 50px;
+        display: flex;
+        align-items: flex-end;
+        gap: 7px;
+        margin-top: auto;
+      }
     }
     &-info {
       max-width: 1134px;
@@ -40,6 +48,18 @@
       .button {
         font-weight: 300;
         color: $white-3;
+      }
+    }
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 50px;
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
       }
     }
   }
@@ -64,16 +84,87 @@
       max-width: 167px;
       width: 100%;
     }
+
+    &-eSeccondary {
+      max-width: 56px;
+    }
+    &-p {
+      max-width: 67px;
+    }
+    &-h {
+      max-width: 75px;
+    }
+    &-o {
+      max-width: 80px;
+    }
+    &-b {
+      max-width: 70px;
+    }
+    &-line {
+      max-width: 412px;
+      margin-left: 24px;
+    }
+    &-s {
+      max-width: 68px;
+    }
+    &-l {
+      max-width: 56px;
+    }
+    &-dSecondary {
+      max-width: 72px;
+    }
+    &-n {
+      max-width: 71px;
+    }
+    &-rSm {
+      max-width: 24px;
+    }
+    &-eSm {
+      max-width: 50px;
+    }
+    &-cSm {
+      max-width: 48px;
+    }
+    &-oSm {
+      max-width: 52px;
+    }
+    &-dSm {
+      max-width: 49px;
+    }
+    &-sSm {
+      max-width: 43px;
+    }
   }
   &--sm {
     .hero {
       &__inner {
-        gap: 120px;
+        gap: 60px;
         &-row {
           gap: 7.5px;
         }
         &.menu {
           gap: 70px;
+        }
+        &-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+          gap: 40px;
+          &-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+          }
+        }
+        &-letter {
+          &-wrapper {
+            margin-left: 25px;
+            display: flex;
+            align-items: flex-end;
+            gap: 5px;
+            margin-top: auto;
+          }
         }
       }
     }
@@ -93,7 +184,59 @@
       &-d {
         max-width: 77px !important;
       }
+      &-eSeccondary {
+        max-width: 41px !important;
+      }
+      &-p {
+        max-width: 48px !important;
+      }
+      &-h {
+        max-width: 55px !important;
+      }
+      &-o {
+        max-width: 62px !important;
+      }
+      &-b {
+        max-width: 50px !important;
+      }
+      &-line {
+        max-width: 308px !important;
+        margin-left: 14px;
+      }
+      &-s {
+        max-width: 51px !important;
+      }
+      &-l {
+        max-width: 53px !important;
+      }
+      &-dSecondary {
+        max-width: 54px !important;
+      }
+      &-n {
+        max-width: 52px !important;
+      }
+      &-rSm {
+        max-width: 18px !important;
+      }
+      &-eSm {
+        max-width: 36px !important;
+      }
+      &-cSm {
+        max-width: 35px !important;
+      }
+      &-oSm {
+        max-width: 40px !important;
+      }
+      &-dSm {
+        max-width: 37px !important;
+      }
+      &-sSm {
+        max-width: 32px !important;
+      }
     }
+  }
+  &--home {
+    margin: auto auto 0;
   }
 }
 .header {
@@ -112,6 +255,18 @@
       }
     }
   }
+  &--home {
+    .header {
+      &__inner {
+        &-link {
+          color: $primary;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
 }
 .footer {
   width: 100%;
@@ -123,8 +278,12 @@
     padding: 20px 0 !important;
     text-align: center;
     p {
-      color: $black;
+      color: $white;
     }
+  }
+  &--home {
+    margin-top: 0;
+    padding: 60px 0 100px;
   }
 }
 .socials {
@@ -159,6 +318,11 @@
 }
 @mixin index-940 {
   .hero {
+    &__inner {
+      &-title {
+        gap: 40px;
+      }
+    }
     .letter {
       &-g {
         max-width: 160px;
@@ -183,39 +347,56 @@
           &.menu {
             gap: 55px;
           }
+          &-title {
+            gap: 40px;
+          }
         }
       }
     }
   }
   .header {
     padding: 25px 0;
-    &__inner {
-      &-link {
-        font-size: 22px;
-      }
-    }
   }
   .footer {
     padding-bottom: 50px;
   }
 }
-@mixin index-768{
-  .hero{
-    &--sm{
-      .hero{
-        &__inner{
+@mixin index-768 {
+  .hero {
+    &__inner {
+      &-title {
+        gap: 30px;
+      }
+    }
+    &--sm {
+      .hero {
+        &__inner {
           gap: 60px;
+          &-title {
+            gap: 30px;
+          }
         }
       }
     }
   }
-
 }
 @mixin index-580 {
   .hero {
     &__inner {
       &-row {
         padding: 0 25px;
+      }
+      &-title {
+        gap: 16px;
+        &-wrapper {
+          gap: 5px;
+        }
+      }
+      &-letter {
+        &-wrapper {
+          margin-left: 9px;
+          gap: 2px;
+        }
       }
     }
     .letter {
@@ -234,17 +415,33 @@
       &-d {
         max-width: 135px;
       }
+      &-line {
+        margin-left: 11px;
+      }
     }
     &--sm {
       .hero {
         &__inner {
-          gap: 45px;
-          &.menu {
-            gap: 45px;
-          }
           &-row {
             padding: unset;
           }
+          &-title {
+            gap: 16px;
+            &-wrapper {
+              gap: 4px;
+            }
+          }
+          &-letter {
+            &-wrapper {
+              margin-left: 15px;
+              gap: 3px;
+            }
+          }
+        }
+      }
+      .letter {
+        &-line {
+          margin-left: 8px;
         }
       }
     }
@@ -255,30 +452,48 @@
     &--copy {
       padding: 15px 0 !important;
     }
+    &--home {
+      padding-top: 40px;
+    }
   }
 }
 @mixin index-460 {
   .header {
     padding: 20px 0;
     &__inner {
-      &-link {
-        font-size: 20px;
-      }
     }
   }
   .hero {
+    &__inner {
+      gap: 50px;
+      &-wrapper {
+        gap: 30px;
+      }
+      &-title {
+        &-wrapper {
+          gap: 3px;
+        }
+      }
+
+      &-row {
+        padding: unset;
+      }
+      &.menu {
+        gap: 50px;
+      }
+    }
     &--sm {
       .hero {
         &__inner {
+          gap: 50px;
           &-wrapper {
             gap: 30px;
           }
-          gap: 35px;
           &-row {
             padding: unset;
           }
           &.menu {
-            gap: 30px;
+            gap: 50px;
           }
         }
       }
@@ -287,6 +502,15 @@
   .socials {
     .button {
       width: calc(20% - 5px);
+    }
+  }
+  .footer {
+    padding-bottom: 30px;
+    &--copy {
+      padding: 10px 0 !important;
+    }
+    &--home {
+      padding-top: 20px;
     }
   }
 }

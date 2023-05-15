@@ -320,6 +320,22 @@ svg {
           flex-direction: column;
   overflow: hidden;
   min-height: 100%;
+  position: relative;
+}
+.main__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.main__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.2;
 }
 
 .autoContainer {
@@ -409,6 +425,7 @@ svg {
 .hero {
   margin: auto;
   padding: 40px 0;
+  position: relative;
 }
 .hero__inner {
   display: -webkit-box;
@@ -464,6 +481,17 @@ svg {
   height: auto;
   fill: #fff;
 }
+.hero__inner-letter-wrapper {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 7px;
+  margin-top: auto;
+}
 .hero__inner-info {
   max-width: 1134px;
   margin: 0 auto;
@@ -482,6 +510,31 @@ svg {
 .hero__inner-info .button {
   font-weight: 300;
   color: #949494;
+}
+.hero__inner-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+.hero__inner-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 .hero .letter-g {
   max-width: 180px;
@@ -503,14 +556,99 @@ svg {
   max-width: 167px;
   width: 100%;
 }
+.hero .letter-eSeccondary {
+  max-width: 56px;
+}
+.hero .letter-p {
+  max-width: 67px;
+}
+.hero .letter-h {
+  max-width: 75px;
+}
+.hero .letter-o {
+  max-width: 80px;
+}
+.hero .letter-b {
+  max-width: 70px;
+}
+.hero .letter-line {
+  max-width: 412px;
+  margin-left: 24px;
+}
+.hero .letter-s {
+  max-width: 68px;
+}
+.hero .letter-l {
+  max-width: 56px;
+}
+.hero .letter-dSecondary {
+  max-width: 72px;
+}
+.hero .letter-n {
+  max-width: 71px;
+}
+.hero .letter-rSm {
+  max-width: 24px;
+}
+.hero .letter-eSm {
+  max-width: 50px;
+}
+.hero .letter-cSm {
+  max-width: 48px;
+}
+.hero .letter-oSm {
+  max-width: 52px;
+}
+.hero .letter-dSm {
+  max-width: 49px;
+}
+.hero .letter-sSm {
+  max-width: 43px;
+}
 .hero--sm .hero__inner {
-  gap: 120px;
+  gap: 60px;
 }
 .hero--sm .hero__inner-row {
   gap: 7.5px;
 }
 .hero--sm .hero__inner.menu {
   gap: 70px;
+}
+.hero--sm .hero__inner-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.hero--sm .hero__inner-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+}
+.hero--sm .hero__inner-letter-wrapper {
+  margin-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 5px;
+  margin-top: auto;
 }
 .hero--sm .letter-g {
   max-width: 82px !important;
@@ -526,6 +664,58 @@ svg {
 }
 .hero--sm .letter-d {
   max-width: 77px !important;
+}
+.hero--sm .letter-eSeccondary {
+  max-width: 41px !important;
+}
+.hero--sm .letter-p {
+  max-width: 48px !important;
+}
+.hero--sm .letter-h {
+  max-width: 55px !important;
+}
+.hero--sm .letter-o {
+  max-width: 62px !important;
+}
+.hero--sm .letter-b {
+  max-width: 50px !important;
+}
+.hero--sm .letter-line {
+  max-width: 308px !important;
+  margin-left: 14px;
+}
+.hero--sm .letter-s {
+  max-width: 51px !important;
+}
+.hero--sm .letter-l {
+  max-width: 53px !important;
+}
+.hero--sm .letter-dSecondary {
+  max-width: 54px !important;
+}
+.hero--sm .letter-n {
+  max-width: 52px !important;
+}
+.hero--sm .letter-rSm {
+  max-width: 18px !important;
+}
+.hero--sm .letter-eSm {
+  max-width: 36px !important;
+}
+.hero--sm .letter-cSm {
+  max-width: 35px !important;
+}
+.hero--sm .letter-oSm {
+  max-width: 40px !important;
+}
+.hero--sm .letter-dSm {
+  max-width: 37px !important;
+}
+.hero--sm .letter-sSm {
+  max-width: 32px !important;
+}
+.hero--home {
+  margin: auto auto 0;
 }
 
 .header {
@@ -551,6 +741,12 @@ svg {
 .header__inner-link:hover {
   color: #F2D649;
 }
+.header--home .header__inner-link {
+  color: #F2D649;
+}
+.header--home .header__inner-link:hover {
+  opacity: 0.7;
+}
 
 .footer {
   width: 100%;
@@ -559,12 +755,16 @@ svg {
 }
 .footer--copy {
   position: unset;
-  background: #D9D9D9;
+  background: #383838;
   padding: 20px 0 !important;
   text-align: center;
 }
 .footer--copy p {
-  color: #000;
+  color: #fff;
+}
+.footer--home {
+  margin-top: 0;
+  padding: 60px 0 100px;
 }
 
 .socials {
@@ -615,6 +815,9 @@ svg {
     padding: 0 25px;
   }
 
+  .hero__inner-title {
+    gap: 40px;
+  }
   .hero .letter-g {
     max-width: 160px;
   }
@@ -636,12 +839,12 @@ svg {
   .hero--sm .hero__inner.menu {
     gap: 55px;
   }
+  .hero--sm .hero__inner-title {
+    gap: 40px;
+  }
 
   .header {
     padding: 25px 0;
-  }
-  .header__inner-link {
-    font-size: 22px;
   }
 
   .footer {
@@ -668,8 +871,14 @@ svg {
     padding: 0 15px;
   }
 
+  .hero__inner-title {
+    gap: 30px;
+  }
   .hero--sm .hero__inner {
     gap: 60px;
+  }
+  .hero--sm .hero__inner-title {
+    gap: 30px;
   }
 }
 @media (max-width: 580px) {
@@ -679,6 +888,16 @@ svg {
 
   .hero__inner-row {
     padding: 0 25px;
+  }
+  .hero__inner-title {
+    gap: 16px;
+  }
+  .hero__inner-title-wrapper {
+    gap: 5px;
+  }
+  .hero__inner-letter-wrapper {
+    margin-left: 9px;
+    gap: 2px;
   }
   .hero .letter-g {
     max-width: 150px;
@@ -695,14 +914,24 @@ svg {
   .hero .letter-d {
     max-width: 135px;
   }
-  .hero--sm .hero__inner {
-    gap: 45px;
-  }
-  .hero--sm .hero__inner.menu {
-    gap: 45px;
+  .hero .letter-line {
+    margin-left: 11px;
   }
   .hero--sm .hero__inner-row {
     padding: unset;
+  }
+  .hero--sm .hero__inner-title {
+    gap: 16px;
+  }
+  .hero--sm .hero__inner-title-wrapper {
+    gap: 4px;
+  }
+  .hero--sm .hero__inner-letter-wrapper {
+    margin-left: 15px;
+    gap: 3px;
+  }
+  .hero--sm .letter-line {
+    margin-left: 8px;
   }
 
   .footer {
@@ -710,6 +939,9 @@ svg {
   }
   .footer--copy {
     padding: 15px 0 !important;
+  }
+  .footer--home {
+    padding-top: 40px;
   }
 
   .button--ico span {
@@ -724,12 +956,23 @@ svg {
   .header {
     padding: 20px 0;
   }
-  .header__inner-link {
-    font-size: 20px;
+  .hero__inner {
+    gap: 50px;
   }
-
+  .hero__inner-wrapper {
+    gap: 30px;
+  }
+  .hero__inner-title-wrapper {
+    gap: 3px;
+  }
+  .hero__inner-row {
+    padding: unset;
+  }
+  .hero__inner.menu {
+    gap: 50px;
+  }
   .hero--sm .hero__inner {
-    gap: 35px;
+    gap: 50px;
   }
   .hero--sm .hero__inner-wrapper {
     gap: 30px;
@@ -738,11 +981,21 @@ svg {
     padding: unset;
   }
   .hero--sm .hero__inner.menu {
-    gap: 30px;
+    gap: 50px;
   }
 
   .socials .button {
     width: calc(20% - 5px);
+  }
+
+  .footer {
+    padding-bottom: 30px;
+  }
+  .footer--copy {
+    padding: 10px 0 !important;
+  }
+  .footer--home {
+    padding-top: 20px;
   }
 
   h1 {
@@ -754,12 +1007,8 @@ svg {
   }
 
   p {
-    font-size: 15px;
+    font-size: 14px;
   }
-  p._lg {
-    font-size: 18px;
-  }
-
   .button--ico span {
     width: 100%;
     position: relative;
