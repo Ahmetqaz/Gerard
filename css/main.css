@@ -490,7 +490,7 @@ svg {
       -ms-flex-align: baseline;
           align-items: baseline;
   gap: 4px;
-  margin-left: 20px;
+  margin-left: 0.5em;
   font-size: 0.8em;
 }
 .hero__inner-letter span {
