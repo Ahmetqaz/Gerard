@@ -8,16 +8,30 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
-    &-wrapper {
+    &-header {
       display: flex;
       flex-direction: column;
-      gap: 42px;
-    }
-    &-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
+      font-size: 60px;
+      gap: 0.8em;
+
+      &-title {
+        display: flex;
+        align-items: baseline;
+        font-size: inherit;
+        gap: 0.1em;
+
+        ._lines {
+          margin-left: 20px;
+        }
+        small {
+          color: $primary;
+          display: flex;
+          align-items: baseline;
+          gap: 4px;
+          margin-left: 20px;
+          font-size: 0.8em;
+        }
+      }
     }
     &-letter {
       span {
