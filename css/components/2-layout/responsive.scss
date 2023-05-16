@@ -10,6 +10,7 @@
   .autoContainer {
     padding: 0 30px;
   }
+  @include index-1025;
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -25,6 +26,10 @@
   @include index-768;
 
 }
+@media (max-width: 650px) {
+  @include index-650;
+
+}
 @media (max-width: 580px) {
   ._hideMob {
     display: none;
@@ -37,6 +42,10 @@
   @include index-460;
   @include componets-460;
   @include components-460;
+
+}
+@media (max-width: 360px) {
+  @include index-360;
 
 }
 

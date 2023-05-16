@@ -12,14 +12,13 @@
       display: flex;
       flex-direction: column;
       font-size: 60px;
-      gap: 0.8em;
-
+      gap: 0.7em;
       &-title {
         display: flex;
         align-items: baseline;
+        justify-content: center;
         font-size: inherit;
-        gap: 0.1em;
-
+        gap: 0.23em;
         ._lines {
           margin-left: 20px;
         }
@@ -31,25 +30,6 @@
           margin-left: 0.5em;
           font-size: 0.8em;
         }
-      }
-    }
-    &-letter {
-      span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      svg {
-        width: 100%;
-        height: auto;
-        fill: $white;
-      }
-      &-wrapper {
-        margin-left: 50px;
-        display: flex;
-        align-items: flex-end;
-        gap: 7px;
-        margin-top: auto;
       }
     }
     &-info {
@@ -64,193 +44,48 @@
         color: $white-3;
       }
     }
-    &-title {
+    &-wrapper {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
       flex-direction: column;
-      gap: 50px;
-      &-wrapper {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-    }
-  }
-  .letter {
-    &-g {
-      max-width: 180px;
-      width: 100%;
-    }
-    &-e {
-      max-width: 130px;
-      width: 100%;
-    }
-    &-r {
-      max-width: 161px;
-      width: 100%;
-    }
-    &-a {
-      max-width: 188px;
-      width: 100%;
-    }
-    &-d {
-      max-width: 167px;
-      width: 100%;
-    }
-
-    &-eSeccondary {
-      max-width: 56px;
-    }
-    &-p {
-      max-width: 67px;
-    }
-    &-h {
-      max-width: 75px;
-    }
-    &-o {
-      max-width: 80px;
-    }
-    &-b {
-      max-width: 70px;
-    }
-    &-line {
-      max-width: 412px;
-      margin-left: 24px;
-    }
-    &-s {
-      max-width: 68px;
-    }
-    &-l {
-      max-width: 56px;
-    }
-    &-dSecondary {
-      max-width: 72px;
-    }
-    &-n {
-      max-width: 71px;
-    }
-    &-rSm {
-      max-width: 24px;
-    }
-    &-eSm {
-      max-width: 50px;
-    }
-    &-cSm {
-      max-width: 48px;
-    }
-    &-oSm {
-      max-width: 52px;
-    }
-    &-dSm {
-      max-width: 49px;
-    }
-    &-sSm {
-      max-width: 43px;
+      gap: 2em;
     }
   }
   &--sm {
     .hero {
       &__inner {
-        gap: 60px;
-        &-row {
-          gap: 7.5px;
+        gap: 70px;
+        &-header {
+          gap: 0.6em;
+          &-title {
+            gap: 0.1em;
+          }
         }
         &.menu {
-          gap: 70px;
-        }
-        &-title {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          flex-direction: column;
-          gap: 40px;
-          &-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 7px;
+          .hero {
+            &__inner {
+              &-header {
+                &-title {
+                  gap: 0.15em;
+                }
+              }
+            }
           }
         }
-        &-letter {
-          &-wrapper {
-            margin-left: 25px;
-            display: flex;
-            align-items: flex-end;
-            gap: 5px;
-            margin-top: auto;
-          }
-        }
-      }
-    }
-    .letter {
-      &-g {
-        max-width: 82px !important;
-      }
-      &-e {
-        max-width: 60px !important;
-      }
-      &-r {
-        max-width: 74px !important;
-      }
-      &-a {
-        max-width: 86px !important;
-      }
-      &-d {
-        max-width: 77px !important;
-      }
-      &-eSeccondary {
-        max-width: 41px !important;
-      }
-      &-p {
-        max-width: 48px !important;
-      }
-      &-h {
-        max-width: 55px !important;
-      }
-      &-o {
-        max-width: 62px !important;
-      }
-      &-b {
-        max-width: 50px !important;
-      }
-      &-line {
-        max-width: 308px !important;
-        margin-left: 14px;
-      }
-      &-s {
-        max-width: 51px !important;
-      }
-      &-l {
-        max-width: 53px !important;
-      }
-      &-dSecondary {
-        max-width: 54px !important;
-      }
-      &-n {
-        max-width: 52px !important;
-      }
-      &-rSm {
-        max-width: 18px !important;
-      }
-      &-eSm {
-        max-width: 36px !important;
-      }
-      &-cSm {
-        max-width: 35px !important;
-      }
-      &-oSm {
-        max-width: 40px !important;
-      }
-      &-dSm {
-        max-width: 37px !important;
-      }
-      &-sSm {
-        max-width: 32px !important;
       }
     }
   }
   &--home {
     margin: auto auto 0;
+    .hero {
+      &__inner {
+        &-header {
+          gap: 0.8em;
+          &-title {
+            gap: 0.15em;
+          }
+        }
+      }
+    }
   }
 }
 .header {
@@ -308,21 +143,9 @@
 }
 @mixin index-1160 {
   .hero {
-    .letter {
-      &-g {
-        max-width: 170px;
-      }
-      &-e {
-        max-width: 120px;
-      }
-      &-r {
-        max-width: 150px;
-      }
-      &-a {
-        max-width: 180px;
-      }
-      &-d {
-        max-width: 155px;
+    &__inner {
+      &-header {
+        font-size: 55px;
       }
     }
   }
@@ -330,39 +153,29 @@
     padding-bottom: 70px;
   }
 }
+@mixin index-1025 {
+  .hero {
+    &__inner {
+      &-header {
+        font-size: 47px;
+      }
+    }
+  }
+}
 @mixin index-940 {
   .hero {
     &__inner {
-      &-title {
-        gap: 40px;
+      &-header {
+        font-size: 43px;
       }
     }
-    .letter {
-      &-g {
-        max-width: 160px;
-      }
-      &-e {
-        max-width: 110px;
-      }
-      &-r {
-        max-width: 140px;
-      }
-      &-a {
-        max-width: 170px;
-      }
-      &-d {
-        max-width: 145px;
-      }
-    }
+
     &--sm {
       .hero {
         &__inner {
           gap: 90px;
           &.menu {
             gap: 55px;
-          }
-          &-title {
-            gap: 40px;
           }
         }
       }
@@ -378,8 +191,8 @@
 @mixin index-768 {
   .hero {
     &__inner {
-      &-title {
-        gap: 30px;
+      &-header {
+        font-size: 37px;
       }
     }
     &--sm {
@@ -394,43 +207,29 @@
     }
   }
 }
-@mixin index-580 {
+@mixin index-650 {
   .hero {
-    &__inner {
-      &-row {
-        padding: 0 25px;
-      }
-      &-title {
-        gap: 16px;
-        &-wrapper {
-          gap: 5px;
-        }
-      }
-      &-letter {
-        &-wrapper {
-          margin-left: 9px;
-          gap: 2px;
+    &--home {
+      padding-top: 100px;
+      .hero {
+        &__inner {
+          &-header {
+            font-size: 6vw;
+          }
         }
       }
     }
-    .letter {
-      &-g {
-        max-width: 150px;
+  }
+}
+@mixin index-580 {
+  .hero {
+    &__inner {
+      &-wrapper {
+        gap: 1.5em;
       }
-      &-e {
-        max-width: 100px;
-      }
-      &-r {
-        max-width: 130px;
-      }
-      &-a {
-        max-width: 160px;
-      }
-      &-d {
-        max-width: 135px;
-      }
-      &-line {
-        margin-left: 11px;
+      &-header {
+        font-size: 7.5vw;
+        gap: 0.6em;
       }
     }
     &--sm {
@@ -502,6 +301,7 @@
           gap: 50px;
           &-wrapper {
             gap: 30px;
+            width: 100%;
           }
           &-row {
             padding: unset;
@@ -525,6 +325,24 @@
     }
     &--home {
       padding-top: 20px;
+    }
+  }
+}
+@mixin index-360 {
+  .hero {
+    &__inner {
+      &-header {
+        font-size: 7vw;
+      }
+    }
+    &--home {
+      .hero {
+        &__inner {
+          &-header {
+            font-size: 5.5vw;
+          }
+        }
+      }
     }
   }
 }

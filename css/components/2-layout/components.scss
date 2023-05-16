@@ -92,13 +92,25 @@
   display: inline-flex;
   font-size: inherit;
   height: 1em;
-
   svg {
     height: 100%;
     width: auto;
+    fill: $white;
   }
   &._d {
     font-size: 1.35em;
+  }
+  &._o {
+    font-size: 1.05em;
+  }
+  &._md {
+    height: 1.4em;
+  }
+  &._lg {
+    height: 1.3em;
+  }
+  &._extra-lg {
+    height: 3.2em;
   }
 }
 
@@ -131,6 +143,15 @@
           transform: translate(-50%, -50%);
         }
       }
+    }
+  }
+  .letter {
+    &._md {
+      height: 2em;
+    }
+  
+    &._extra-lg {
+      height: 3.8em;
     }
   }
 }
