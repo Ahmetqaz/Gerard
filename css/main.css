@@ -555,7 +555,7 @@ svg {
   margin: auto auto 0;
 }
 .hero--home .hero__inner-header {
-  gap: 0.8em;
+  gap: 0.6em;
 }
 .hero--home .hero__inner-header-title {
   gap: 0.15em;
@@ -716,7 +716,7 @@ svg {
   }
   .hero__inner-header {
     font-size: 7.5vw;
-    gap: 0.6em;
+    gap: 0.5em;
   }
   .hero--sm .hero__inner-row {
     padding: unset;
